@@ -1,0 +1,7 @@
+<body onload="console.log('IFRAME: This is an inline script executed when the compromised iframe was loaded.')">
+    <div>compromised</div>
+    <script type="text/javascript">
+        console.log('IFRAME: xss within the iframe is possible, but restricted. A security error is raised when I try to access window.top.document:');
+        console.log(window.top.document);
+    </script>
+</body>

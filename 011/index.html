@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            console.log("PARENT: This was executed as part of a SCRIPT tag in the parent window.")
+        </script>
+        <script type="text/javascript" src="http://all.i.do.is.win:9337/remote.js"></script>
+        <script type="text/javascript" src="http://you.cannot.win:9337/remote.js"></script>
+    </head>
+    <body onload='console.log("PARENT: This was executed as an inline script from the parent window.");'>
+        <div id="target">Target div</div>
+        <iframe src="http://you.cannot.win:9337/compromised.html" sandbox="allow-scripts allow-same-origin"></iframe>
+    </body>
+</html>
