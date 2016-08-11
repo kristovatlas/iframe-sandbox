@@ -9,7 +9,7 @@ This uses this sandbox attribute: `sandbox="allow-scripts"`
 Add to `/etc/hosts` file:
 ```
 127.0.0.1       all.i.do.is.win
-127.0.0.1       got.money.on.my.mind
+127.0.0.1       you.cannot.win
 ```
 
 ## Usage

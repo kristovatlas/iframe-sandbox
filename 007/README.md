@@ -9,7 +9,7 @@ This uses this sandbox attribute: `sandbox="allow-same-origin"`
 Add to `/etc/hosts` file:
 ```
 127.0.0.1       all.i.do.is.win
-127.0.0.1       got.money.on.my.mind
+127.0.0.1       gyou.cannot.win
 ```
 
 ## Usage
