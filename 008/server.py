@@ -14,7 +14,7 @@ HEADERS = [{"Content-Security-Policy":
             ("default-src 'none'; "
              "frame-src 'self' http://you.cannot.win:9337 ; "
              "child-src 'self' http://you.cannot.win:9337 ; "
-             "script-src 'self' ;")}]
+             "script-src 'self' 'unsafe-inline';")}]
 
 class CustomHeadersRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     """A request handler that includes custom HTTP response headers."""

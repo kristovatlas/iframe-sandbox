@@ -1,0 +1,14 @@
+<body onload="console.log('IFRAME: This is an inline script executed when the compromised iframe was loaded.')">
+    <div>compromised</div>
+    <script type="text/javascript">
+        try {
+            console.log("IFRAME: (compromised.html): foo is " + foo);
+        }
+        catch (err) {
+            console.log("IFRAME: (compromised.html): Encountered error trying to read the variable 'foo': " + err.messsage);
+        }
+        console.log('IFRAME: (from SCRIPT block) xss within the iframe is possible, but restricted. A security error is raised when I try to access window.top.document:');
+        console.log(window.top.document);
+    </script>
+    <script type="text/javascript" src="http://you.cannot.win:9337/remote.js"></script>
+</body>
