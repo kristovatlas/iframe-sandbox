@@ -12,6 +12,7 @@ PORT = 9337
 #yeah it's a global variable wanna fight about it?
 HEADERS = [{"Content-Security-Policy":
             ("default-src 'none'; "
+             "frame-src 'self' http://you.cannot.win:9337 ; "
              "child-src 'self' http://you.cannot.win:9337 ; "
              "script-src 'self' ;")}]
 
